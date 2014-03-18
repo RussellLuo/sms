@@ -10,12 +10,12 @@ logger = logging.getLogger(__name__)
 
 
 def task():
-	def callback(result):
-		""" 将result记入日志
-		"""
-		logger.info(str(result))
+    def callback(result):
+        """ 将result记入日志
+        """
+        logger.info(str(result))
 
-	import time
-	while True:
-		sms.get_report(callback)
-		time.sleep(10)
+    import time
+    while True:
+        sms.get_report(callback)
+        time.sleep(10)
